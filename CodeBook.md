@@ -11,17 +11,17 @@ By running the run_analysis.R script (see README.md), you create a file called "
 ## Variables
 This "tidy_data_MW.txt" file has 4 variables and 15,480 observations.
 
-* subject       a unique identifier for each of the 30 participating subjects
-* activity      one out of 6 possible activities that were carried out by the subjects
-* measurement   one out of 86 possible indicators for which data was gathered by the smartphone of the indicated subject carrying out the indicated activity.  
-* mean_values   the mean of all the measurements of a particular indicator belonging to the same activity carried out by the same person
+* subject: a unique identifier for each of the 30 participating subjects
+* activity: one out of 6 possible activities that were carried out by the subjects
+* measurement: one out of 86 possible indicators for which data was gathered by the smartphone of the indicated subject carrying out the indicated activity.  
+* mean_values: the mean of all the measurements of a particular indicator belonging to the same activity carried out by the same person
 
 Each observation describes the mean of the measurements of one indicator (named in the measurement variable) for one activity (named in the activity variable) carried out by one person (designated in the subject variable).
 
-### subject
+### Variable 1: subject
 Integer [1:30]
 
-### activity
+### Variable 2: activity
 Factor w/ 6 levels
 * WALKING            
 * WALKING_UPSTAIRS   
@@ -30,7 +30,7 @@ Factor w/ 6 levels
 * STANDING
 * LAYING         
 
-### measurement
+### Variable 3:measurement
 Factor w/ 86 levels
 N.B. These names were adopted from the source files and unchanged. Please refer to the "features_info.txt" in the source file for a more detailed description of what these indicators mean.
 *  tBodyAcc-mean()-X                    
@@ -120,5 +120,5 @@ N.B. These names were adopted from the source files and unchanged. Please refer 
 *  angle(Y,gravityMean)                 
 *  angle(Z,gravityMean)   
 
-### mean_values
+### Variable 4: mean_values
 Numeric value (mean calculated from a series of normalized [-1:1] values)
